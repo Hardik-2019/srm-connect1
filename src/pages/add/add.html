@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add Query</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="question" placeholder="Question"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="desc" placeholder="Description"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+      <ion-label>Select Category</ion-label>
+      <ion-select placeholder="Select" [(ngModel)]="category">
+        <ion-option value="College Life">College Life</ion-option>
+          <ion-option value="Discussion">Discussion</ion-option>
+          <ion-option value="Technical">Technical</ion-option>
+          <ion-option value="Placement">Placement</ion-option>
+          <ion-option value="Confessions">Confessions</ion-option>
+          <ion-option value="Education">Education</ion-option>
+          <ion-option value="Movies">Movies</ion-option>
+          <ion-option value="Fun">Fun</ion-option>
+          <ion-option value="Other">Other</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <br>
+
+  <div style="text-align: center;">
+    <button ion-button style="width: 100px;" (click)="Submit()">Submit</button>
+  </div>
+</ion-content>

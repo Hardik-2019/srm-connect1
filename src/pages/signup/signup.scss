@@ -1,0 +1,58 @@
+page-signup {
+    ion-item{
+        background:transparent !important;
+    }
+    ion-input{
+        background: transparent !important;
+    }
+    .master{
+        background-image:linear-gradient(135deg,#55d6d0,#49b3cd,#4b74a4,#5d4e71);
+        text-align: center;
+	    background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+    }  
+    @-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .button{
+        background-color:rgb(24, 6, 90);
+        color: honeydew;    
+        width: 30%; 
+        border-radius: 8px;       
+    }
+    h2,h3{
+        color: rgb(24, 6, 90);
+    }
+    #join{
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(24, 6, 90);
+        border-radius: 8px;
+    }
+    #menu{
+        background-color:transparent;
+        float: left;
+        font-size: xx-large;
+    }
+}
+

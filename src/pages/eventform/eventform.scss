@@ -1,0 +1,43 @@
+page-eventform {
+    ion-item{
+        background-color:rgb(190, 218, 224);
+        background: transparent !important;
+    }
+    .master{
+        background-color:#4a7cb4;
+        text-align: center;
+    }  
+h2{
+    color:rgb(24, 6, 90);
+    font-style: oblique;
+    padding-bottom: 10px;
+    margin-top: 0;
+    padding-top: 5px;
+    text-align:center;
+}
+.button{
+    background-color:rgb(24, 6, 90);
+    color: honeydew;
+    width: 30%; 
+        border-radius: 8px; 
+}
+#join{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(24, 6, 90);
+    border-radius: 8px;
+}
+#menu{
+    float: left;
+    font-size: xx-large;
+    background-color:transparent;
+}
+h3,h6{
+    color:rgb(24, 6, 90);
+    text-align: left;
+}
+#text{
+    text-align: left;
+    font-size: 20px;
+}
+}

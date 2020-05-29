@@ -1,0 +1,27 @@
+page-aboutus {
+    .master{
+        background-color: white;
+    }  
+    ion-header{
+        background-color: #85cefa;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        border-bottom: solid;
+        border-color:rgb(24, 6, 90);
+        border-width: 3px;
+    }
+    
+#head{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(24, 6, 90);
+}
+#top{
+    text-align: center;
+}
+#menu{
+    background-color:transparent;
+    float: left;
+    font-size: xx-large;
+}
+}

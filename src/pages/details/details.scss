@@ -1,0 +1,63 @@
+page-details {
+
+}
+page-details {
+    .master{
+        background-image:linear-gradient(#49b3cd,#5d4e71);
+    }
+    
+    .deet{
+        background-color: transparent;
+    }
+    .label-md {
+        margin: 12px 8px 13px 0;
+    }
+    .question{
+        font-size: 1.8rem;
+        font-weight: bold;;
+        color: white;
+        display:block;
+    }
+    .card-md{
+        border-radius: 6px;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        background-color: #4d9ed0;
+    }
+    .deets{
+        background-color: #4cb6b1;
+        color: white;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    
+    .description{
+        display: block;
+        color: white;
+        
+    }
+    .vote{
+        padding: 0;
+        color: white;
+    }   
+    .comment{
+        position: relative;
+        bottom: 0px;
+        padding: 10px;
+        padding-right: 65px;
+    }
+    .textbox{
+        border-radius: 5px !important;
+    }
+    .voter{
+        display: inline-block;
+    }
+    #upvote{
+        color: white !important;
+        opacity: 100 !important;
+    }
+    .delete{
+        color: white !important;
+        font-size: larger;
+    }
+}

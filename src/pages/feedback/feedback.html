@@ -1,0 +1,23 @@
+<ion-header>
+  <div id="top">
+    <button id="menu" menuToggle>
+      <ion-icon name="menu" id="menu"></ion-icon>
+    </button>
+
+    <h2 id="head">Feedback </h2>
+  </div>
+</ion-header>
+<ion-content class="master" padding>
+<form id="join">
+  <ion-item no-lines>
+  <ion-label floating><h2>Title</h2></ion-label>
+  <ion-input id="title" name="title" [(ngModel)]="title" type="text"></ion-input>
+</ion-item>
+<ion-item no-lines>
+  <ion-label floating><h2>Feedback</h2></ion-label>
+  <ion-textarea id="feed" name="feed" [(ngModel)]="feed" type="text"></ion-textarea>
+</ion-item>
+</form>
+<button class="next" ion-button type="submit" (click)="next()">Send</button>
+
+</ion-content>

@@ -1,0 +1,51 @@
+page-feedback {
+    .master{
+        background-color: white;
+    } 
+
+    ion-item{
+        background-color:white;
+        background: transparent !important;
+    }
+#head{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(24, 6, 90);
+}
+#top{
+    text-align: center;
+}
+#menu{
+    background-color:transparent;
+    float: left;
+    font-size: xx-large;
+}
+#join{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(24, 6, 90);
+    border-radius: 8px;
+}
+h2,h3,p{
+    color: rgb(24, 6, 90);
+}
+.button{
+    background-color:#85cefa;
+    color: rgb(24, 6, 90); 
+    font-size: large;   
+    font-weight: bold;
+    width: 100%; 
+    border-radius: 4px;  
+    border-style: solid;
+    border-color:rgb(24, 6, 90);
+    border-width: 2px;
+}
+ion-header{
+    background-color: #85cefa;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom: solid;
+    border-color:rgb(24, 6, 90);
+    border-width: 3px;
+}
+}
