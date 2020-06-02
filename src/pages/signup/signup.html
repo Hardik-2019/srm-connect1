@@ -1,9 +1,14 @@
-<ion-content class="master" padding>
+<ion-header no-border>
+  <div id="heading">
   <button id="menu" type="submit" (click)="next()">
-    <ion-icon name="arrow-back" ></ion-icon>
+    <ion-icon name="arrow-back"></ion-icon>
   </button>
-  <h3>Sign Up</h3>
+  <h2 id="signup">Signup</h2>
+</div>
+</ion-header>
 
+<ion-content class="master" padding>
+  
   <ion-card style="border-radius: 8px; background: transparent;">
   <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">
 

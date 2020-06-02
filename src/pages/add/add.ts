@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ForumPage } from '../forum/forum';
 import {Http} from '@angular/http';
 import {Storage} from '@ionic/storage';
 
@@ -53,5 +54,8 @@ export class AddPage {
       
       this.navCtrl.pop();
     }
+    }
+    next1(){
+      this.navCtrl.push(ForumPage);
     }
   }

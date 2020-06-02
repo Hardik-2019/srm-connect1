@@ -3,64 +3,74 @@ page-forum {
         text-align: center;
     }
     ion-header{
-        background-color: #85cefa;
-        border-bottom-left-radius: 2.5rem;
-        border-bottom-right-radius: 2.5rem;
-        border-bottom: solid;
-        border-color:rgb(24, 6, 90);
-        border-width: 3px;
+        background-color: #0e92ed;
+    border-bottom-right-radius: 3.5rem;
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
     }
     #menu{
         background-color:transparent;
         float: left;
         font-size: xx-large;
+        color: white;
+        margin-left: 5px;
     }
     .master{
-        background-image:linear-gradient(#49b3cd,#5d4e71);
+        background-color:white;
     }
     #head{
         font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        font-style: oblique;
-        color: rgb(24, 6, 90);
-        margin: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: inline;
     }
     .card-md{
+        // border-radius: 6px;
+        //  border-bottom-left-radius: 2.5rem;
+        //  border-bottom-right-radius: 2.5rem;
+        // background-color: #4d9ed0;
         border-radius: 6px;
-        border-bottom-left-radius: 2.5rem;
-        border-bottom-right-radius: 2.5rem;
-        background-color: #4d9ed0;
-        
+    border-bottom-right-radius: 3.5rem;
+    width: 95%;
+    margin-left: auto;
+    margin-top: 20px;  
+    border-left: solid;
+    border-bottom: solid;
+    border-color: rgb(24, 6, 90);
+    border-width: 3px;
+    }
+    #nav{
+        display: inline;
     }
     .deets{
-        background-color: #4cb6b1;
-        color: white;
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        background: linear-gradient(16deg, rgba(255,255,255,1) 70%, #0e92ed 98%);
+        // background-color: #4cb6b1;
+        // color: white;
+        // border-bottom-left-radius: 2rem;
+        // border-bottom-right-radius: 2rem;
     }
     .question-type{
         font-weight: 1000;
-        color: white;
+        // color: white;
     }
     .question{
         font-weight: 800;
-        color: white;
+        // color: white;
     }
     .vote{
         padding: 0;
-        color: white;
+        // color: white;
     }   
     .sh-ans{
-        color: white;
+        // color: white;
     }
     .share{
-        color: white !important;    
+        // color: white !important;    
         font-size: large;
         
     }
     .edits{
-        color: white;
+        // color: white;
         display: inline-block;
         font-weight: inherit;
         min-height: 36px;
@@ -68,30 +78,28 @@ page-forum {
         vertical-align: -6px;
     }
     .fab-close-icon{
-        color: white;
+        // color: white;
         opacity: 100 !important;
         font-size: 50px;
     }
     .search{
         float: right;
-        color: black !important;
         font-size: 20px;
         padding: 0;
         padding-left: 15px;
-    }
-    #forum{
-        float:left;
-        color: black;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    #menu{
-        display: inline-block;
-        float: left;
-        padding-top: 11px;
+        color: rgb(24, 6, 90);
     }
     .delete{
         color: white !important;
         font-size: larger;
+    }
+    #top{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .lnav{
+        color: white;
+        float: right;
+        display: inline;
     }
 }

@@ -1,13 +1,17 @@
-<ion-header>
-  <ion-navbar>
+<ion-header no-border>
+  <div id="top">
+    <button id="menu" type="submit" (click)="next1()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  
     <ion-item class="deet">
-      <ion-avatar item-start>
+      <ion-avatar class="head" item-start>
         <img src="assets/imgs/images.png">
       </ion-avatar>
       <h4>{{value.Name}}</h4>
       <p>{{value.date}} {{value.time}}</p>
     </ion-item>
-  </ion-navbar>
+  </div>
 </ion-header>
 
 <ion-content class="master">
@@ -23,7 +27,7 @@
       Q: {{value.question}}
     </div>
     <br/>
-    <div class="voter" style="color: white; padding-left: 1.5px;">
+    <div class="voter" style="color: rgb(24, 6, 90); padding-left: 1.5px;">
       {{value.upvotes-value.downvotes}}
     </div>
     <br/>
@@ -40,7 +44,7 @@
 
 
   <div style="text-align: center;">
-    <button ion-button clear (click)="Answer()" style="color:rgb(104, 104, 226);">
+    <button ion-button clear (click)="Answer()" style="color:rgb(24, 6, 90);">
       ANSWER
     </button>
 
@@ -51,8 +55,8 @@
           <ion-avatar item-start>
             <img src="assets/imgs/images.png">
           </ion-avatar>
-          <h2 style="color: white;">{{aname}}</h2>
-          <p style="color: wheat;">{{atime}}</p>
+          <h2 style="color: rgb(24, 6, 90);font-weight: bold;">{{aname}}</h2>
+          <p style="color: rgb(24, 6, 90);">{{atime}}</p>
         </ion-item>
         
         <br>
@@ -87,8 +91,8 @@
             <ion-avatar item-start>
               <img src="assets/imgs/images.png">
             </ion-avatar>
-            <h2 style="color: white;">{{comment.username}}</h2>
-            <p style="color: wheat;">{{comment.date}} {{comment.time}}</p>
+            <h2 style="color: rgb(24, 6, 90);font-weight: bold;">{{comment.username}}</h2>
+            <p style="color: rgb(24, 6, 90);">{{comment.date}} {{comment.time}}</p>
           </ion-item>
           <br>
           <ion-card-content>
@@ -121,16 +125,16 @@
           </ion-card-content>
       </ion-card>
     </div>
-    
+  </div>
 
     
 
 
     <ion-footer class="comment">
-        <ion-input type="text" placeholder="Add a Answer.." class="textbox" [(ngModel)]="answer"></ion-input>
+        <ion-input type="text" placeholder="Add an Answer.." class="textbox" [(ngModel)]="answer"></ion-input>
         <ion-fab right bottom>
           <button ion-fab (click)="submit()"><ion-icon name="paper-plane"></ion-icon></button>
         </ion-fab>
     </ion-footer>
-  </div>
+ 
 </ion-content>

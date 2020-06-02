@@ -1,7 +1,10 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Add Query</ion-title>
-  </ion-navbar>
+<ion-header no-border>
+  <div id="heading">
+  <button id="menu" type="submit" (click)="next1()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <h2 id="signup">Add Query</h2>
+</div>
 </ion-header>
 
 <ion-content padding>
@@ -35,6 +38,6 @@
   <br>
 
   <div style="text-align: center;">
-    <button ion-button style="width: 100px;" (click)="Submit()">Submit</button>
+    <button ion-button (click)="Submit()">Submit</button>
   </div>
 </ion-content>

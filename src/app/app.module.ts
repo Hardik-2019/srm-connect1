@@ -17,6 +17,7 @@ import { AboutusPage } from '../pages/aboutus/aboutus';
 import { HttpModule }from '@angular/http';
 import { NewpagePage } from '../pages/newpage/newpage';
 import {ForumPage} from '../pages/forum/forum';
+import {MyprofilePage} from '../pages/myprofile/myprofile';
 import {DetailsPage} from '../pages/details/details';
 import {AddPage} from '../pages/add/add';
 
@@ -33,7 +34,8 @@ import {AddPage} from '../pages/add/add';
     NewpagePage,
     ForumPage,
     DetailsPage,
-    AddPage
+    AddPage,
+    MyprofilePage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import {AddPage} from '../pages/add/add';
     NewpagePage,
     ForumPage,
     DetailsPage,
-    AddPage
+    AddPage,
+    MyprofilePage
   ],
   providers: [
     StatusBar,

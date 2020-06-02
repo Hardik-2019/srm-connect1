@@ -4,6 +4,7 @@ import { EventformPage } from '../eventform/eventform';
 import { HomePage } from '../home/home';
 import { Http }from '@angular/http';
 import { Storage }from '@ionic/storage';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 @IonicPage()
 @Component({
@@ -18,8 +19,9 @@ export class EventsPage {
   items:any;
   user:any;
   checkFav: boolean;
+  result:any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams,public http:Http,public storage:Storage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public http:Http,public storage:Storage,private socialSharing:SocialSharing) {
 
 
     
@@ -73,7 +75,7 @@ export class EventsPage {
     this.http.post('http://localhost:3000/fetchfavourites',body).subscribe(res=>{
     console.log(res.json()); 
     this.favs=res.json();
-
+    console.log('value',this.favs);
     if(res.json()!=null){
       this.items=res.json();
     }
@@ -121,7 +123,15 @@ export class EventsPage {
      this.ionViewWillEnter();
      //console.log('current segment is ',this.selectedSegment)
    }
-   favourites(){
-     console.log('current segment ',this.selectedSegment)
-}
+   share(){
+    this.socialSharing.share('Message', 'Subject', 'http://www.ionicsync.com/images/logo.png', 'http://www.ionicsync.com').then(() => {
+
+        console.log('Shared Successfully');
+
+    }).catch(() => {
+
+        console.log('Sharing Failed');
+
+    });
+};
 }

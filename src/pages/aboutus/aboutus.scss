@@ -3,19 +3,17 @@ page-aboutus {
         background-color: white;
     }  
     ion-header{
-        background-color: #85cefa;
-        border-bottom-left-radius: 2.5rem;
-        border-bottom-right-radius: 2.5rem;
-        border-bottom: solid;
-        border-color:rgb(24, 6, 90);
-        border-width: 3px;
+        background-color: #0e92ed;
+    border-bottom-right-radius: 3.5rem;
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
     }
     
-#head{
-    font-size: 30px;
+    #head{
+        font-size: 30px;
     font-weight: bold;
-    color: rgb(24, 6, 90);
-}
+    color: white;
+    margin: 10px;
+    }
 #top{
     text-align: center;
 }
@@ -23,5 +21,7 @@ page-aboutus {
     background-color:transparent;
     float: left;
     font-size: xx-large;
+    margin-left: 5px;
+    color:white
 }
 }

@@ -3,44 +3,18 @@ page-home {
         background: transparent !important;
     }
      .master{
-        background-image:linear-gradient(135deg,#55d6d0,#49b3cd,#4b74a4,#7e6392,#5d4e71);
+        background-image:linear-gradient(155deg,white 1%,#0e92ed 20%,#0e92ed 85%,white 99%);
         text-align: center;
-	    background-size: 400% 400%;
-	-webkit-animation: gradientBG 10s ease infinite;
-	        animation: gradientBG 10s ease infinite;
-    } 
-    @-webkit-keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
     }
     .button{
-        background-color:#85cefa;
-        color: rgb(24, 6, 90); 
-        font-size: large;   
-        font-weight: bold;
-        width: 100%; 
-        border-radius: 4px;  
-        border-style: solid;
-        border-color:rgb(24, 6, 90);
-        border-width: 2px;    
+        background: transparent !important;
+    color: rgb(24, 6, 90); 
+    font-size: large;   
+    width: 100%; 
+    border-radius: 10px;  
+    border-style: solid;
+    border-color:rgb(24, 6, 90);
+    border-width: 2px;
     }
     h2,h3,p{
         color: rgb(36, 13, 121);

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Http} from '@angular/http'
 import {Storage} from '@ionic/storage'
+import {ForumPage} from '../forum/forum'
 
 @IonicPage()
 @Component({
@@ -133,5 +134,8 @@ answerid:answerid
   
       })
   console.log(answerid , this.uid)
+}
+next1(){
+  this.navCtrl.push(ForumPage);
 }
 } 

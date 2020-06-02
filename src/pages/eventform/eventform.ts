@@ -35,6 +35,5 @@ export class EventformPage {
   }
   next1(){
     this.navCtrl.push(EventsPage);
-    this.navCtrl.setRoot(EventsPage);
    }
 }

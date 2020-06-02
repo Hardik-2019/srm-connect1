@@ -10,7 +10,7 @@
 
     <ion-item no-lines>
       <ion-label floating><h2>Username</h2></ion-label>
-      <ion-input  [(ngModel)]="name1" type="text" formControlName="username"></ion-input>
+      <ion-input  [(ngModel)]="name1" type="text" formControlName="username" no-lines></ion-input>
     </ion-item>
     <ion-item no-lines *ngIf="log.controls.username.hasError('required') && log.controls.username.touched">
       <p>Username Required</p>
@@ -19,7 +19,7 @@
 
     <ion-item no-lines style="padding-bottom: 10px;">
       <ion-label floating><h2>Password</h2></ion-label>
-      <ion-input [(ngModel)]="pas1" type="password" formControlName="password"></ion-input>
+      <ion-input [(ngModel)]="pas1" type="password" formControlName="password" no-lines></ion-input>
     </ion-item>
     <ion-item no-lines *ngIf="log.controls.password.hasError('required') && log.controls.password.touched">
       <p>Password Required</p>

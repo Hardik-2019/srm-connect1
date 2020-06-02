@@ -7,6 +7,7 @@ import { FeedbackPage } from '../pages/feedback/feedback';
 import { AboutusPage } from '../pages/aboutus/aboutus';
 import { EventsPage } from '../pages/events/events';
 import { ForumPage } from '../pages/forum/forum';
+import { MyprofilePage } from '../pages/myprofile/myprofile';
 //import { NewpagePage } from '../pages/newpage/newpage';
 
 
@@ -25,6 +26,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'My Profile', component: MyprofilePage},
       { title: 'Home', component: EventsPage },
       { title: 'Forum', component: ForumPage},
       { title: 'Feedback', component: FeedbackPage },

@@ -1,10 +1,11 @@
-<ion-header>
-      <button ion-button clear id="menu" menuToggle>
-        <ion-icon name="menu"></ion-icon>
+<ion-header no-border>
+  <div id="top">
+      <button id="menu" menuToggle>
+        <ion-icon name="menu" id="menu"></ion-icon>
       </button>
-      <button ion-button clear id="forum"><h2 id="head">Forum</h2></button>
-      <button ion-button clear class="search" (click)="Search()"><ion-icon name="search"></ion-icon></button>
-      <button ion-button clear class="search">
+      <h2 id="head">Forum</h2>
+      <span id="nav"><button style="font-size: xx-large;" ion-button clear class="search" class="lnav" (click)="Search()"><ion-icon name="search"></ion-icon></button>
+      <button style="font-size: xx-large;" ion-button clear class="search">
         
         <ion-select selectedText=" " cancelText="Clear" #C (ionChange)="Filter(C.value)" (ionCancel)="onCancel()">
           <ion-option value="College Life">College Life</ion-option>
@@ -18,16 +19,19 @@
           <ion-option value="Other">Other</ion-option>
         </ion-select>
 
-      <ion-icon name="ios-funnel-outline"></ion-icon></button>
+      <ion-icon class="lnav"  name="ios-funnel-outline"></ion-icon></button></span></div>
     <ion-item *ngIf="csearch" style="background-color: transparent;">
     <ion-searchbar #S (ionChange)="SearchString(S.value)"></ion-searchbar> 
   </ion-item>
 </ion-header>
 
+<br>
+<br>
+<br>
+
 <ion-content class="master">
 
 <div *ngFor="let detail of details; let i= index">
-  
   
 <ion-card>
 

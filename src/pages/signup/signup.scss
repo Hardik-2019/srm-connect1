@@ -5,54 +5,50 @@ page-signup {
     ion-input{
         background: transparent !important;
     }
+    #heading{
+        margin-top: 10px;
+    }
+    #menu{
+        float: left;
+        font-size: xx-large;
+        background-color:transparent;
+        color: white;
+    }
+    ion-header{
+        background-color: #0e92ed;
+    border-bottom-right-radius: 3.5rem;
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
+    }
     .master{
-        background-image:linear-gradient(135deg,#55d6d0,#49b3cd,#4b74a4,#5d4e71);
+        background-image:linear-gradient(135deg,white 1%,#0e92ed 50%,white 45%,#0e92ed 99%);
         text-align: center;
-	    background-size: 400% 400%;
-	-webkit-animation: gradientBG 10s ease infinite;
-	        animation: gradientBG 10s ease infinite;
     }  
-    @-webkit-keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+    
     .button{
-        background-color:rgb(24, 6, 90);
-        color: honeydew;    
-        width: 30%; 
-        border-radius: 8px;       
+        background: transparent !important;
+    color: rgb(24, 6, 90); 
+    font-size: large;   
+    width: 100%; 
+    border-radius: 10px;  
+    border-style: solid;
+    border-color:rgb(24, 6, 90);
+    border-width: 2px;       
     }
-    h2,h3{
-        color: rgb(24, 6, 90);
+    h2{
+        color:rgb(24, 6, 90);
+    }
+    #signup{
+        color:white;
+        padding-bottom: 10px;
+        margin-top: 0;
+        padding-top: 5px;
+        text-align:center;
     }
     #join{
         border: 2px;
         border-style: solid;
         border-color: rgb(24, 6, 90);
         border-radius: 8px;
-    }
-    #menu{
-        background-color:transparent;
-        float: left;
-        font-size: xx-large;
     }
 }
 
