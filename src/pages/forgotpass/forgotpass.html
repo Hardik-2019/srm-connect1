@@ -1,0 +1,88 @@
+<ion-header no-border>
+  <div id="top">
+    <button id="menu" type="submit" (click)="next()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <h2 id="head">Forgot Password </h2>
+  </div>
+</ion-header>
+
+<ion-content class="master" padding>
+  <form id="join" [formGroup]="log" (ngSubmit)="logForm()">
+
+  <ion-item no-lines>
+  <ion-label floating><h2>Name</h2></ion-label>
+  <ion-input name="name" [(ngModel)]="name" type="text" formControlName="name"></ion-input>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.name.hasError('required') && log.controls.name.touched">
+  <p>username is required</p>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.name.hasError('pattern') && log.controls.name.touched">
+  <p>Invalid Username</p>
+</ion-item>
+
+<ion-item no-lines>
+  <ion-label floating><h2>Email</h2></ion-label>
+  <ion-input name="email" [(ngModel)]="email" type="email" formControlName="email"></ion-input>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.email.hasError('required') && log.controls.email.touched">
+  <p>email is required</p>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.email.hasError('pattern') && log.controls.email.touched">
+  <p>Invalid email</p>
+</ion-item>
+
+<ion-item no-lines>
+  <ion-label floating><h2>Registration Number</h2></ion-label>
+  <ion-input name="regno" [(ngModel)]="regno" type="text" formControlName="regno"></ion-input>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.regno.hasError('required') && log.controls.regno.touched">
+  <p>Registration Numbe is required</p>
+</ion-item>
+<ion-item no-lines *ngIf="log.controls.regno.hasError('pattern') && log.controls.regno.touched">
+  <p>Invalid Registration Number</p>
+</ion-item>
+
+</form>
+<button class="next" ion-button type="submit" (click)="check()" [disabled]="!log.valid">check</button>
+
+<div *ngIf="check1">
+  <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Password</h2>
+      </ion-label>
+      <ion-input name="pass1" [(ngModel)]="pass1" type="password" formControlName="password1"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password1.hasError('required') && sup.controls.password1.touched">
+      <p>password is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password1.hasError('minlength') && sup.controls.password1.touched">
+      <p>Invalid password</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password1.hasError('pattern') && sup.controls.password1.touched">
+      <p>Password strength is low</p>
+    </ion-item>
+  
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Password</h2>
+      </ion-label>
+      <ion-input name="pass2" [(ngModel)]="pass2" type="password" formControlName="password2"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password2.hasError('required') && sup.controls.password2.touched">
+      <p>password is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password2.hasError('minlength') && sup.controls.password2.touched">
+      <p>Invalid password</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password2.hasError('pattern') && sup.controls.password2.touched">
+      <p>Password strength is low</p>
+    </ion-item>
+
+  </form>
+  <button class="next" ion-button type="submit" (click)="change()" [disabled]="!sup.valid">Change</button>
+</div>
+</ion-content>

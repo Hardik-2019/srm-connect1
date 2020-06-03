@@ -24,6 +24,8 @@
     <ion-item no-lines *ngIf="log.controls.password.hasError('required') && log.controls.password.touched">
       <p>Password Required</p>
     </ion-item>
+
+    <a id="forgot" (click)=forgot() style="text-align: right;">Forgot Password</a>
         
   </form>
 

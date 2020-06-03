@@ -26033,7 +26033,6 @@ page-events .card-md {
   width: 100%;
   margin-left: 0px;
   margin-top: 20px;
-  background: linear-gradient(20deg, white 80%, #0e92ed 96%);
   -webkit-box-shadow: -5px 5px 0px 0 #18065a;
   box-shadow: -5px 5px 0px 0 #18065a;
 }
@@ -26124,6 +26123,64 @@ page-feedback .button {
 }
 
 page-feedback ion-header {
+  background-color: #0e92ed;
+  border-bottom-right-radius: 3.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+}
+
+page-forgotpass .master {
+  background-color: white;
+}
+
+page-forgotpass ion-item {
+  background-color: white;
+  background: transparent !important;
+}
+
+page-forgotpass #head {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+page-forgotpass #top {
+  text-align: center;
+}
+
+page-forgotpass #menu {
+  background-color: transparent;
+  float: left;
+  font-size: xx-large;
+  margin-left: 5px;
+  color: white;
+}
+
+page-forgotpass #join {
+  border: 2px;
+  border-style: solid;
+  border-color: #18065a;
+  border-radius: 8px;
+}
+
+page-forgotpass h2, page-forgotpass h3, page-forgotpass p {
+  color: #18065a;
+}
+
+page-forgotpass .button {
+  background-color: #0e92ed;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-right-radius: 1.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+  margin-bottom: 40px;
+}
+
+page-forgotpass ion-header {
   background-color: #0e92ed;
   border-bottom-right-radius: 3.5rem;
   -webkit-box-shadow: -5px 5px 0px 0 #18065a;
@@ -26239,7 +26296,6 @@ page-home ion-item {
 }
 
 page-home .master {
-  background-image: linear-gradient(155deg, white 1%, #0e92ed 20%, #0e92ed 85%, white 99%);
   text-align: center;
 }
 
@@ -26369,7 +26425,6 @@ page-signup ion-header {
 }
 
 page-signup .master {
-  background-image: linear-gradient(135deg, white 1%, #0e92ed 50%, white 45%, #0e92ed 99%);
   text-align: center;
 }
 

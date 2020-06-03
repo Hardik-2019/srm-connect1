@@ -4,7 +4,8 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { SignupPage } from '../signup/signup';
 import { EventsPage } from '../events/events';
 import { Http }from '@angular/http';
-import { Storage }from '@ionic/storage'
+import { Storage }from '@ionic/storage';
+import { ForgotpassPage }from '../forgotpass/forgotpass';
 
 @Component({
   selector: 'page-home',
@@ -54,5 +55,8 @@ next1(){
 
 logForm() {
   console.log(this.log.value);
+}
+forgot(){
+  this.navCtrl.push(ForgotpassPage);
 }
 }
