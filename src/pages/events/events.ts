@@ -143,8 +143,8 @@ export class EventsPage {
     console.log('current segment is ', this.selectedSegment)
   }
 
-  share() {
-    this.socialSharing.share('Message', 'Subject', 'http://www.ionicsync.com/images/logo.png', 'http://www.ionicsync.com').then(() => {
+  share(title,description) {
+    this.socialSharing.share( description , title ,  'http://www.ionicsync.com').then(() => {
 
       console.log('Shared Successfully');
 

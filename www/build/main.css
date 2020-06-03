@@ -26299,7 +26299,7 @@ page-home .master {
   text-align: center;
 }
 
-page-home .button {
+page-home .submit {
   background: transparent !important;
   color: #18065a;
   font-size: large;
@@ -26334,6 +26334,18 @@ page-home #image {
   height: 175px;
   width: auto;
   margin-bottom: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+page-home #forgot {
+  background-color: transparent;
+  color: #18065a;
+  float: right;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 page-interest ion-item {
@@ -26396,6 +26408,41 @@ page-myprofile #menu {
   font-size: xx-large;
   margin-left: 5px;
   color: white;
+}
+
+page-myprofile .pic {
+  border-style: solid;
+  border-radius: 10px;
+  border-bottom-right-radius: 5.5rem;
+  border-color: #18065a;
+}
+
+page-myprofile ion-label {
+  color: #18065a;
+  margin-top: 20px;
+}
+
+page-myprofile ion-item {
+  margin: 20px;
+}
+
+page-myprofile ion-input {
+  width: 80%;
+}
+
+page-myprofile .button {
+  background-color: #0e92ed;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-right-radius: 1.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+}
+
+page-myprofile h2 {
+  color: #18065a;
 }
 
 page-signup ion-item {

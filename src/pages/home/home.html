@@ -25,15 +25,15 @@
       <p>Password Required</p>
     </ion-item>
 
-    <a id="forgot" (click)=forgot() style="text-align: right;">Forgot Password</a>
+    <button id="forgot" (click)=forgot() style="text-align: right;">Forgot Password</button>
         
   </form>
 
-  <button ion-button type="submit" (click)="next1()"  [disabled]="!log.valid">Login</button>
+  <button ion-button class="submit" type="submit" (click)="next1()"  [disabled]="!log.valid">Login</button>
   <hr>
   <br>
   
   <p>Logging in for the first time?</p>
-    <button ion-button type="submit" (click)="next()" >Sign up</button>
+    <button ion-button class="submit" type="submit" (click)="next()" >Sign up</button>
   </div>
 </ion-content>

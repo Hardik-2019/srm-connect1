@@ -5,7 +5,7 @@ page-home {
      .master{
         text-align: center;
     }
-    .button{
+    .submit{
         background: transparent !important;
     color: rgb(24, 6, 90); 
     font-size: large;   
@@ -36,5 +36,16 @@ page-home {
         height: 175px;
         width: auto;
         margin-bottom: 20px;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    #forgot{
+        background-color: transparent;
+        color: rgb(24, 6, 90);
+        float: right;
+        font-size: 15px;;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-decoration: underline;
     }
 }
