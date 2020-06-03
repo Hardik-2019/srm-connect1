@@ -1,0 +1,135 @@
+page-events {
+    .master{
+       // background-image:linear-gradient(135deg,#49b3cd,#605496);
+       background-color: white;
+    }  
+
+.des{
+    font-size: 18px;
+    text-align: justify;
+    height:100px;
+    overflow: hidden;
+}
+ion-card-title{
+    color: rgb(24, 6, 90);
+    
+}
+ion-item{
+   // background-color:rgb(190, 218, 224);
+    background: transparent !important;
+}
+
+ion-icon{
+    background: transparent !important;
+    font-size: xx-large;
+}
+h2{
+    color: rgb(24, 6, 90);
+}
+
+#head{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+.back{
+    margin-left: 0%;
+}   
+
+.favo{
+    font-size: 20px;
+    color:rgb(24, 6, 90);
+}
+#top{
+    text-align:center;
+}
+#menu{
+    background-color:transparent;
+    float: left;
+    font-size: xx-large;
+    margin-left: 5px;
+    color: white;
+}
+#join{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(24, 6, 90);
+    border-radius: 8px;
+    background-color: white;
+}
+.next{
+    background-color:#0e92ed;
+    color: white; 
+    font-size: 24px;   
+    width: 100%; 
+    border-radius: 5px;
+    border-bottom-right-radius: 1.5rem; 
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
+}
+ion-scroll {
+
+    width: 100%;
+
+    height: 100%;
+
+  }
+  #grid{
+      text-align: center;
+  }
+  #host{
+    background: transparent !important;
+    float: left;
+    font-size:xx-large;
+    color: rgb(24, 6, 90);
+    padding-right: 20px;
+  }
+  #name{
+      font-size: 20px;
+      color: rgb(24, 6, 90);
+      font-weight: bold;
+  }
+  ion-label{
+      font-size:20px;
+      color: rgb(24, 6, 90);
+  }
+  .card-md{
+    border-radius: 6px;
+    border-bottom-right-radius: 3.5rem;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 20px;  
+    background: linear-gradient(20deg, rgba(255,255,255,1) 80%, #0e92ed 96%);
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
+}
+.photo{
+    
+    border-width: 1px;
+    border-radius: 6px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+ion-header{
+    background-color: #0e92ed;
+    border-bottom-right-radius: 3.5rem;
+    box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
+}
+
+#title{
+    color: rgb(24, 6, 90);
+    font-weight: bold;
+}
+.tab:hover{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+.tab{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+ion-icon{
+    color: rgb(24, 6, 90);
+}
+}

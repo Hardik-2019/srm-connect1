@@ -1,0 +1,103 @@
+<ion-header no-border>
+  <div id="top">
+      <button id="menu" menuToggle>
+        <ion-icon name="menu" id="menu"></ion-icon>
+      </button>
+      <h2 id="head">Forum</h2>
+      <span id="nav"><button style="font-size: xx-large;" ion-button clear class="search" class="lnav" (click)="Search()"><ion-icon name="search"></ion-icon></button>
+      <button style="font-size: xx-large;" ion-button clear class="search">
+        
+        <ion-select selectedText=" " cancelText="Clear" #C (ionChange)="Filter(C.value)" (ionCancel)="onCancel()">
+          <ion-option value="College Life">College Life</ion-option>
+          <ion-option value="Discussion">Discussion</ion-option>
+          <ion-option value="Technical">Technical</ion-option>
+          <ion-option value="Placement">Placement</ion-option>
+          <ion-option value="Confessions">Confessions</ion-option>
+          <ion-option value="Education">Education</ion-option>
+          <ion-option value="Movies">Movies</ion-option>
+          <ion-option value="Fun">Fun</ion-option>
+          <ion-option value="Other">Other</ion-option>
+        </ion-select>
+
+      <ion-icon class="lnav"  name="ios-funnel-outline"></ion-icon></button></span></div>
+    <ion-item *ngIf="csearch" style="background-color: transparent;">
+    <ion-searchbar #S (ionChange)="SearchString(S.value)"></ion-searchbar> 
+  </ion-item>
+</ion-header>
+
+<br>
+<br>
+<br>
+
+<ion-content class="master">
+
+<div *ngFor="let detail of details; let i= index">
+  
+<ion-card>
+
+  <ion-item class="deets" (click)="Details(i)">
+  
+    <ion-avatar item-start>
+        <img src="assets/imgs/images.png">
+    </ion-avatar>
+
+    <h2 style="color: white;">{{detail.Name}}</h2>
+
+    <p style="color: wheat;">{{detail.date}} &nbsp; {{detail.time}}</p>
+
+  </ion-item>
+
+  <br>
+
+    <ion-card-content>
+      <div class="question-type" (click)="Details(i)">
+        {{detail.qtype}}
+      </div>
+      
+      <div class="question" (click)="Details(i)">
+        Q: {{detail.question}}
+      </div>
+
+      <div class="sh-ans" (click)="Details(i)">
+        {{detail.description}}
+      </div>
+
+
+      <div style="text-align: center; ">
+
+        <span>
+          <button ion-button clear class="vote">
+            <ion-icon name="arrow-round-up"></ion-icon>
+            &ensp;&ensp;{{detail.upvotes - detail.downvotes}}
+          </button>
+      </span>
+
+      &ensp;
+
+      <span>
+        <button ion-button clear class="vote">
+          <ion-icon name="arrow-round-down"></ion-icon>
+        </button>
+      </span>
+
+        <button ion-button clear class="share" (click)="Share()">
+          <ion-icon name="share"></ion-icon>
+        </button> 
+
+        <div class="edits">
+          {{detail.comments}}
+          <ion-icon name="md-create"></ion-icon>
+        </div>
+        
+        <button ion-button clear class="delete" (click)="Delete(i)" *ngIf="uid==detail.userid">
+          <ion-icon name="md-trash"></ion-icon>
+        </button>
+      </div>
+    </ion-card-content>
+</ion-card>
+</div>
+
+<ion-fab right bottom>
+  <button ion-fab (click)="AddPage()"><ion-icon name="add-outline" id="addbutton"></ion-icon></button>
+</ion-fab>
+</ion-content>

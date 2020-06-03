@@ -1,0 +1,148 @@
+<ion-header no-border>
+  <div id="top">
+    <button id="menu" type="submit" (click)="next1()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  
+    <ion-item class="deet">
+      <ion-avatar class="head" item-start>
+        <img src="assets/imgs/images.png">
+      </ion-avatar>
+      <h4>{{value.Name}}</h4>
+      <p>{{value.date}} {{value.time}}</p>
+    </ion-item>
+  </div>
+</ion-header>
+
+<ion-content class="master">
+
+<div></div>
+  <ion-card>
+    
+    <ion-card-content class="questions">
+      <div class="voter">
+        <button ion-button clear style="padding: 0; margin: 0; padding-right: 10px;" ><ion-icon name="arrow-round-up" id="upvote"></ion-icon></button>
+      </div>
+    <div class="question" style="display: inline-block; max-width: 348px;">
+      Q: {{value.question}}
+    </div>
+    <br/>
+    <div class="voter" style="color: rgb(24, 6, 90); padding-left: 1.5px;">
+      {{value.upvotes-value.downvotes}}
+    </div>
+    <br/>
+    <div class="voter">
+      <button ion-button clear style="padding: 0; margin: 0; padding-right: 10px;"><ion-icon name="arrow-round-down" id="upvote"></ion-icon></button>
+    </div>
+    <div class="description" style="display: inline-block;">
+       {{value.description}}
+    </div>
+  
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <div style="text-align: center;">
+    <button ion-button clear (click)="Answer()" style="color:rgb(24, 6, 90);">
+      ANSWER
+    </button>
+
+
+    <ion-card *ngIf="check1">
+      <ion-item class="deets">
+
+          <ion-avatar item-start>
+            <img src="assets/imgs/images.png">
+          </ion-avatar>
+          <h2 style="color: rgb(24, 6, 90);font-weight: bold;">{{aname}}</h2>
+          <p style="color: rgb(24, 6, 90);">{{atime}}</p>
+        </ion-item>
+        
+        <br>
+
+        <ion-card-content>
+
+          <div class="description">
+            {{value.answer}}
+          </div>
+          <br>
+          <span>
+            <button ion-button clear class="vote" (click)="inc()">
+              <ion-icon name="arrow-round-up"></ion-icon>
+              &ensp;&ensp;{{upvotes - downvotes}}
+            </button>
+          </span>
+  
+          &ensp;
+  
+          <span>
+           <button ion-button clear class="vote" (click)="dec()">
+              <ion-icon name="arrow-round-down"></ion-icon>
+            </button>
+          </span>
+
+        </ion-card-content>
+    </ion-card>
+
+    <div *ngFor="let comment of comments; let i = index">
+      <ion-card>
+        <ion-item class="deets">
+            <ion-avatar item-start>
+              <img src="assets/imgs/images.png">
+            </ion-avatar>
+            <h2 style="color: white;">{{comment.username}}</h2>
+            <p style="color: wheat;">{{comment.date}} {{comment.time}}</p>
+          </ion-item>
+          <br>
+          <ion-card-content>
+            <div class="description">
+              {{comment.answers}}
+            </div>
+  
+            <br><div *ngFor="let item of items"> 
+              <span><div *ngIf="items.includes(comment.answerid) == true">
+                <button ion-button clear class="vote" (click)="upvote(comment.answerid)">
+                  <ion-icon name="arrow-round-up"></ion-icon>
+                 
+                </button>
+                
+              </div>
+              &ensp;&ensp;{{comment.upvotes - comment.downvotes+xx}}
+              <div *ngIf="items.includes(comment.answerid) == false">
+                <button ion-button clear class="vote" (click)="upvote(comment.answerid)">
+                  <ion-icon name="arrow-round-up"></ion-icon>
+                 
+                </button>
+                
+              </div>
+           
+              </span>
+            </div>
+            &ensp;
+    
+            <!-- <span>
+             <button ion-button clear class="vote">
+                <ion-icon name="arrow-round-down"></ion-icon>
+              </button>
+            </span> -->
+  
+            <button ion-button clear class="delete" (click)="Delete(i)" *ngIf="uid==comment.userid">
+              <ion-icon name="md-trash"></ion-icon>
+            </button>
+          </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+
+    
+
+
+    <ion-footer class="comment">
+        <ion-input type="text" placeholder="Add an Answer.." class="textbox" [(ngModel)]="answer"></ion-input>
+        <ion-fab right bottom>
+          <button ion-fab (click)="submit()"><ion-icon name="paper-plane"></ion-icon></button>
+        </ion-fab>
+    </ion-footer>
+ 
+</ion-content>

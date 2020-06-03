@@ -1,0 +1,166 @@
+<ion-header no-border>
+  <div id="heading">
+  <button id="menu" type="submit" (click)="next()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <h2 id="signup">Signup</h2>
+</div>
+</ion-header>
+
+<ion-content class="master" padding>
+  
+  <ion-card style="border-radius: 8px; background: transparent;">
+  <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">
+
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Username</h2>
+      </ion-label>
+      <ion-input id="name" name="name" [(ngModel)]="name" type="text" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.username.hasError('required') && sup.controls.username.touched">
+      <p>username is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.username.hasError('pattern') && sup.controls.username.touched">
+      <p>Invalid Username</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Email</h2>
+      </ion-label>
+      <ion-input id="em" name="em" [(ngModel)]="em" type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.email.hasError('required') && sup.controls.email.touched">
+      <p>email is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.email.hasError('email') && sup.controls.email.touched">
+      <p> Invalid email</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Password</h2>
+      </ion-label>
+      <ion-input id="pas" name="pas" [(ngModel)]="pas" type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password.hasError('required') && sup.controls.password.touched">
+      <p>password is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password.hasError('minlength') && sup.controls.password.touched">
+      <p>Invalid password</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.password.hasError('pattern') && sup.controls.password.touched">
+      <p>Password strength is low</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Mobile</h2>
+      </ion-label>
+      <ion-input id="mob" name="mob" [(ngModel)]="mob" type="string" formControlName="mobile"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.mobile.hasError('required') && sup.controls.mobile.touched">
+      <p>mobile number is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.mobile.hasError('pattern') && sup.controls.mobile.touched">
+      <p>Invalid mobile number</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Registration Number</h2>
+      </ion-label>
+      <ion-input id="reg" name="reg" [(ngModel)]="reg" type="string" formControlName="regno"></ion-input>
+    </ion-item>
+    <ion-item  no-lines *ngIf="sup.controls.regno.hasError('required') && sup.controls.regno.touched">
+      <p>Registration number is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.regno.hasError('pattern') && sup.controls.regno.touched">
+      <p>Registration number is wrong</p>
+    </ion-item>
+
+    <ion-item no-lines>
+      <ion-label floating>
+        <h2>Course</h2>
+      </ion-label>
+      <ion-input id="course" name="course" [(ngModel)]="course" type="text" formControlName="course"></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.course.hasError('required') && sup.controls.course.touched">
+      <p>Course is required</p>
+    </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.course.hasError('pattern') && sup.controls.course.touched">
+      <p>Invalid Course</p>
+    </ion-item>
+
+    <br><br>
+
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label>
+          <h2>Batch</h2>
+        </ion-label>
+        <ion-select name="batch" [(ngModel)]="batch" formControlName="batch">
+          <ion-option value="1">1</ion-option>
+          <ion-option value="2">2</ion-option>
+        </ion-select>
+      </ion-item>
+    <ion-item no-lines *ngIf="sup.controls.batch.hasError('required') && sup.controls.batch.touched">
+      <p>Batch is required</p>
+    </ion-item>
+    </ion-list>
+
+    <br>
+
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label>
+          <h2>Department</h2>
+        </ion-label>
+        <ion-select name="dept" [(ngModel)]="dept" formControlName="dept">
+          <ion-option value="A1">A1</ion-option>
+          <ion-option value="B1">B1</ion-option>
+          <ion-option value="C1">C1</ion-option>
+          <ion-option value="A2">A2</ion-option>
+          <ion-option value="B2">B2</ion-option>
+          <ion-option value="C2">C2</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.dept.hasError('required') && sup.controls.dept.touched">
+          <p>Department is required</p>
+        </ion-item>
+    </ion-list>
+
+<br>
+
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label>
+          <h2>Year</h2>
+        </ion-label>
+        <ion-select name="year" [(ngModel)]="year" formControlName="year">
+          <ion-option value="1">1st</ion-option>
+          <ion-option value="2">2nd</ion-option>
+          <ion-option value="3">3rd</ion-option>
+          <ion-option value="4">4th</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.year.hasError('required') && sup.controls.year.touched">
+          <p>year is required</p>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Picture</ion-label>
+          <ion-icon item-start md="md-image" class="text-primary"></ion-icon>
+          <ion-input type="file" name="image" accept="image/*" (change)="changeListener($event)">Choose Image</ion-input>
+        </ion-item>
+    </ion-list>
+      
+  </form>
+</ion-card>
+
+    <button ion-button type="submit" (click)="store()" [disabled]="!sup.valid">Register</button>
+    
+    <!-- <button ion-button type="submit" (click)="uploadpic()" >upload your profile </picture></button>
+    -->
+  </ion-content>

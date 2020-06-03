@@ -1,0 +1,16 @@
+
+<ion-content class="master" padding *ngFor="let event of events">
+  <ion-header no-border>
+  <div id="heading">
+  <button id="menu" type="submit" (click)="next1()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </button>
+  <h2>{{event.venue}}</h2>
+</div>
+</ion-header>
+  
+  <img id="image" src="../assets/imgs/images.jfif" />
+  <h3>{{event.title}}</h3>
+  <h6>{{event.date}}</h6>
+  <div id="text">{{event.description}}</div>
+</ion-content>

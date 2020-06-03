@@ -1,0 +1,37 @@
+
+<link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+<ion-content class="master" padding>
+  <p id='head' ><b>SRM Connect</b></p>
+ 
+  <img id="image" src="../assets/imgs/social2.png" />
+  <div>
+  <h3 style="font-family: 'Share Tech';">  Login</h3>
+  <form id="join" [formGroup]="log" (ngSubmit)="logForm()">
+
+    <ion-item no-lines>
+      <ion-label floating><h2>Username</h2></ion-label>
+      <ion-input  [(ngModel)]="name1" type="text" formControlName="username" no-lines></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="log.controls.username.hasError('required') && log.controls.username.touched">
+      <p>Username Required</p>
+    </ion-item>
+    
+
+    <ion-item no-lines style="padding-bottom: 10px;">
+      <ion-label floating><h2>Password</h2></ion-label>
+      <ion-input [(ngModel)]="pas1" type="password" formControlName="password" no-lines></ion-input>
+    </ion-item>
+    <ion-item no-lines *ngIf="log.controls.password.hasError('required') && log.controls.password.touched">
+      <p>Password Required</p>
+    </ion-item>
+        
+  </form>
+
+  <button ion-button type="submit" (click)="next1()"  [disabled]="!log.valid">Login</button>
+  <hr>
+  <br>
+  
+  <p>Logging in for the first time?</p>
+    <button ion-button type="submit" (click)="next()" >Sign up</button>
+  </div>
+</ion-content>

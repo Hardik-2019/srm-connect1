@@ -1,0 +1,41 @@
+page-home {  
+    ion-item{
+        background: transparent !important;
+    }
+     .master{
+        background-image:linear-gradient(155deg,white 1%,#0e92ed 20%,#0e92ed 85%,white 99%);
+        text-align: center;
+    }
+    .button{
+        background: transparent !important;
+    color: rgb(24, 6, 90); 
+    font-size: large;   
+    width: 100%; 
+    border-radius: 10px;  
+    border-style: solid;
+    border-color:rgb(24, 6, 90);
+    border-width: 2px;
+    }
+    h2,h3,p{
+        color: rgb(36, 13, 121);
+        font-style: oblique;
+    }
+    #head{
+        font-size:xx-large;
+        color: rgb(24, 6, 90);
+        font-style: oblique;
+        font-family: 'Share Tech';
+        font-style: italic;
+    }
+    #join{
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(24, 6, 90);
+        border-radius: 8px;
+    }
+    #image{
+        height: 175px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}

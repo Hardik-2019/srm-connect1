@@ -1,0 +1,28 @@
+page-interest {
+    ion-item{
+        background-color:rgb(190, 218, 224);
+        background: transparent !important;
+    }
+    .master{
+        background-color:rgb(190, 218, 224);
+        text-align: center;
+    }  
+ ion-label{
+     color: rgb(24, 6, 90);
+ }
+ h2{
+    color: rgb(24, 6, 90);
+ }
+ .button{
+    background-color:rgb(24, 6, 90);
+    color: honeydew;    
+    width: 30%; 
+    border-radius: 8px;       
+}
+#join{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(24, 6, 90);
+    border-radius: 8px;
+}
+}

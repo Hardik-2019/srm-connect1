@@ -1,0 +1,171 @@
+<ion-header no-border>
+    <div id="top">
+      <button id="menu" menuToggle>
+        <ion-icon name="menu" id="menu"></ion-icon>
+      </button>
+
+      <h2 id="head">Events </h2>
+    </div>
+    <ion-segment class="seg" [(ngModel)]="selectedSegment">
+      <ion-segment-button (click)="all()" class="tab" value="all" style="border-bottom-width:0px;color: white;">
+        All
+      </ion-segment-button>
+      <ion-segment-button (click)="favourites()" class="tab" value="favourites" style="border-bottom-width:0px ;color: white;">
+        Favourites
+      </ion-segment-button>
+      <ion-segment-button class="tab" value="interest" style="border-bottom-width:0px ;color: white;">
+        Interest
+      </ion-segment-button>
+    </ion-segment>
+</ion-header>
+<ion-content class="master" padding>
+  <!-- [virtualScroll]="events" [approxItemHeight]="'100px'"  *virtualItem="let event"   -->
+  <div [ngSwitch]="selectedSegment">
+    <div>
+      <ion-list *ngSwitchCase="'all'" id="first">
+
+        <ion-card id="card" *ngFor="let event of events" >
+
+          <ion-card-header class="cardhead" (click)="next1(event.eventid)">
+            <button id="host">
+              <ion-icon style="font-size: 50px;" name="contact"></ion-icon>
+            </button>
+            <span id="name" name="date">{{event.venue}}</span><br>
+            {{event.date}}
+
+            <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(event.eventid)" />
+          </ion-card-header>
+          <ion-card-content class="cardbody" (click)="next1(event.eventid)">
+
+            <ion-card-title name="title" id="title">
+              {{event.title}}
+            </ion-card-title>
+            <hr>
+            <p name="des" class="des" >{{event.description}}</p>
+
+          </ion-card-content>
+          <div>
+            <ion-grid id="grid">
+              <ion-row>
+                <ion-col>
+                        <button (click)="next2(event.eventid)" id="heart" ion-button icon-start clear small>
+                         <ion-icon style="font-size: xx-large; text-align: center;" name='heart-outline'></ion-icon>
+                        </button>
+                </ion-col>
+
+                <ion-col>
+                  <button ion-button icon-start clear small>
+                    <ion-icon style="font-size: xx-large; text-align: center;" name="call"></ion-icon>
+                    <div></div>
+                  </button>
+                </ion-col>
+
+                <ion-col>
+                  <button (click)="share()" ion-button icon-start clear small>
+                    <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>
+                    <div></div>
+                  </button>
+                </ion-col>
+
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-card>
+      </ion-list>
+    </div>
+  </div>
+
+  <div [ngSwitch]="selectedSegment">
+    <ion-list class="favo" *ngSwitchCase="'favourites'">
+
+      <ion-card *ngFor="let fav of favs">
+        <ion-card-header class="cardhead" (click)="next1(fav.eventid)">
+          <button id="host">
+            <ion-icon style="font-size: 50px;" name="contact"></ion-icon>
+          </button>
+          <span id="name" name="date">{{fav.venue}}</span><br>
+          {{fav.date}}
+          <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(fav.eventid)" />
+        </ion-card-header>
+        <ion-card-content (click)="next1(fav.eventid)">
+          <ion-card-title name="title" id="title">
+            {{fav.title}}
+          </ion-card-title>
+          <hr>
+          <p name="des" class="des">
+            {{fav.description}}
+          </p>
+        </ion-card-content>
+        <ion-grid id="grid">
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small (click)="Delete(fav.eventid)">
+                <ion-icon style="font-size: xx-large; text-align: center;" name="heart-outline"></ion-icon>
+                <div></div>
+              </button>
+            </ion-col>
+
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon style="font-size: xx-large; text-align: center;" name="call"></ion-icon>
+                <div></div>
+              </button>
+            </ion-col>
+
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>
+                <div></div>
+              </button>
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-list>
+  </div>
+
+  <div [ngSwitch]="selectedSegment">
+    <ion-list class="fav" *ngSwitchCase="'interest'">
+      <h2> Choose what to see </h2>
+      <form id="join">
+
+        <ion-item no-lines>
+          <ion-label>Technical</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Fun</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Recruitment</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Social</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Seminar</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Workshop</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+        <ion-item no-lines>
+          <ion-label>Environment</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+
+      </form>
+
+      <div style="text-align: center;">
+        <button class="next" ion-button type="submit" (click)="next()">Save</button>
+      </div>
+    </ion-list>
+
+  </div>
+
+</ion-content>
