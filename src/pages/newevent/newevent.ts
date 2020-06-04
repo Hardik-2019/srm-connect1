@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { EventsPage } from '../events/events';
 import {Http} from '@angular/http';
+import { AlertController } from 'ionic-angular';
 
 
 @IonicPage()
@@ -16,26 +17,31 @@ export class NeweventPage {
   desc:any;
   date:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public http: Http, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NeweventPage');
   }
 back(){
-  this.navCtrl.push(HomePage);
+  this.navCtrl.push(EventsPage);
 }
 next(){
   var body= {
     title:this.title,
     venue:this.venue,
-    //link:this.link,
+    link:this.link,
     desc:this.desc,
     date:this.date
   }
   this.http.post('http://localhost:3000/uploadevent',body).subscribe(res =>{
     console.log("success")
-  })                    
+  })     
+  const alert = this.alertCtrl.create({
+    title: 'Changes Saved',
+    buttons: ['OK']
+  });
+  alert.present();               
 
 this.navCtrl.pop();
 }

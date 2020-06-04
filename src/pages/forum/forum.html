@@ -62,37 +62,51 @@
         {{detail.description}}
       </div>
 
-
-      <div style="text-align: center; ">
-
+      <ion-grid id="grid">
+        <ion-row>
+          
+      <ion-col>
         <span>
           <button ion-button clear class="vote">
             <ion-icon name="arrow-round-up"></ion-icon>
-            &ensp;&ensp;{{detail.upvotes - detail.downvotes}}
+            &ensp;&ensp;{{detail.upvotes}}
           </button>
       </span>
+      </ion-col>
 
       &ensp;
 
+      <ion-col>
       <span>
         <button ion-button clear class="vote">
           <ion-icon name="arrow-round-down"></ion-icon>
+          &ensp;&ensp;{{detail.downvotes}}
         </button>
       </span>
+    </ion-col>
 
+    <ion-col>
         <button ion-button clear class="share" (click)="Share()">
           <ion-icon name="share"></ion-icon>
-        </button> 
+        </button>
+      </ion-col> 
 
+      <ion-col>
         <div class="edits">
           {{detail.comments}}
           <ion-icon name="md-create"></ion-icon>
         </div>
+      </ion-col>
         
+        <ion-col>
         <button ion-button clear class="delete" (click)="Delete(i)" *ngIf="uid==detail.userid">
           <ion-icon name="md-trash"></ion-icon>
         </button>
-      </div>
+      </ion-col>
+        
+        </ion-row>
+      </ion-grid>
+
     </ion-card-content>
 </ion-card>
 </div>

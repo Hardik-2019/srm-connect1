@@ -5,10 +5,10 @@ webpackJsonp([2],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewpagePageModule", function() { return NewpagePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NeweventPageModule", function() { return NeweventPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__newpage__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__newevent__ = __webpack_require__(113);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var NewpagePageModule = /** @class */ (function () {
-    function NewpagePageModule() {
+var NeweventPageModule = /** @class */ (function () {
+    function NeweventPageModule() {
     }
-    NewpagePageModule = __decorate([
+    NeweventPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__newpage__["a" /* NewpagePage */],
+                __WEBPACK_IMPORTED_MODULE_2__newevent__["a" /* NeweventPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__newpage__["a" /* NewpagePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__newevent__["a" /* NeweventPage */]),
             ],
         })
-    ], NewpagePageModule);
-    return NewpagePageModule;
+    ], NeweventPageModule);
+    return NeweventPageModule;
 }());
 
-//# sourceMappingURL=newpage.module.js.map
+//# sourceMappingURL=newevent.module.js.map
 
 /***/ })
 

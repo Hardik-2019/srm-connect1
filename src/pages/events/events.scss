@@ -15,7 +15,7 @@ ion-card-title{
     
 }
 ion-item{
-   // background-color:rgb(190, 218, 224);
+    background-color:rgb(190, 218, 224);
     background: transparent !important;
 }
 
@@ -26,7 +26,11 @@ ion-icon{
 h2{
     color: rgb(24, 6, 90);
 }
-
+.fab-close-icon{
+    // color: white;
+    opacity: 100 !important;
+    font-size: 50px;
+}
 #head{
     font-size: 30px;
     font-weight: bold;

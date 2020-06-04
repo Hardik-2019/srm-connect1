@@ -13,103 +13,105 @@
     <img class="pic" src="assets/imgs/images.png">
   </ion-avatar>
 
-  <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">
+  <!-- <div *ngFor="let detail of details"> -->
+    <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">
 
 
-    <ion-item no-lines>
-      <ion-label stacked>
-        <h2>Username</h2>
-      </ion-label>
-      <ion-input id="name" name="name" [(ngModel)]="name" type="text" formControlName="username"></ion-input>
-    </ion-item>
-    <ion-item no-lines *ngIf="sup.controls.username.hasError('pattern') && sup.controls.username.touched">
-      <p>Invalid Username</p>
-    </ion-item>
-
-    <ion-item no-lines>
-      <ion-label stacked>
-        <h2>Email</h2>
-      </ion-label>
-      <ion-input id="em" name="em" [(ngModel)]="em" type="text" formControlName="email"></ion-input>
-    </ion-item>
-    <ion-item no-lines *ngIf="sup.controls.email.hasError('email') && sup.controls.email.touched">
-      <p> Invalid email</p>
-    </ion-item>
-
-    <ion-item no-lines>
-      <ion-label stacked>
-        <h2>Mobile</h2>
-      </ion-label>
-      <ion-input id="mob" name="mob" [(ngModel)]="mob" type="string" formControlName="mobile"></ion-input>
-    </ion-item>
-    <ion-item no-lines *ngIf="sup.controls.mobile.hasError('pattern') && sup.controls.mobile.touched">
-      <p>Invalid mobile number</p>
-    </ion-item>
-
-    <ion-item no-lines>
-      <ion-label stacked>
-        <h2>Registration Number</h2>
-      </ion-label>
-      <ion-input id="reg" name="reg" [(ngModel)]="reg" type="string" formControlName="regno"></ion-input>
-    </ion-item>
-    <ion-item no-lines *ngIf="sup.controls.regno.hasError('pattern') && sup.controls.regno.touched">
-      <p>Registration number is wrong</p>
-    </ion-item>
-
-    <ion-item no-lines>
-      <ion-label stacked>
-        <h2>Course</h2>
-      </ion-label>
-      <ion-input id="course" name="course" [(ngModel)]="course" type="text" formControlName="course"></ion-input>
-    </ion-item>
-    <ion-item no-lines *ngIf="sup.controls.course.hasError('pattern') && sup.controls.course.touched">
-      <p>Invalid Course</p>
-    </ion-item>
-
-
-    <ion-list>
       <ion-item no-lines>
-        <ion-label>
-          <h2>Batch</h2>
+        <ion-label stacked>
+          <h2>Username</h2>
         </ion-label>
-        <ion-select name="batch" [(ngModel)]="batch" formControlName="batch">
-          <ion-option value="1">1</ion-option>
-          <ion-option value="2">2</ion-option>
-        </ion-select>
+        <ion-input id="name" name="name" [(ngModel)]="name" type="text" formControlName="username"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.username.hasError('pattern') && sup.controls.username.touched">
+        <p>Invalid Username</p>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>
+          <h2>Email</h2>
+        </ion-label>
+        <ion-input id="em" name="em" [(ngModel)]="em" type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.email.hasError('email') && sup.controls.email.touched">
+        <p> Invalid email</p>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>
+          <h2>Mobile</h2>
+        </ion-label>
+        <ion-input id="mob" name="mob" [(ngModel)]="mob" type="string" formControlName="mobile">}</ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.mobile.hasError('pattern') && sup.controls.mobile.touched">
+        <p>Invalid mobile number</p>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>
+          <h2>Registration Number</h2>
+        </ion-label>
+        <ion-input id="reg" name="reg" [(ngModel)]="reg" type="string" formControlName="regno"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.regno.hasError('pattern') && sup.controls.regno.touched">
+        <p>Registration number is wrong</p>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>
+          <h2>Course</h2>
+        </ion-label>
+        <ion-input id="course" name="course" [(ngModel)]="course" type="text" formControlName="course"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="sup.controls.course.hasError('pattern') && sup.controls.course.touched">
+        <p>Invalid Course</p>
+      </ion-item>
+
+
+      <ion-list>
+        <ion-item no-lines>
+          <ion-label>
+            <h2>Batch</h2>
+          </ion-label>
+          <ion-select name="batch" [(ngModel)]="batch" formControlName="batch">
+            <ion-option value="1">1</ion-option>
+            <ion-option value="2">2</ion-option>
+          </ion-select>
         </ion-item>
-    </ion-list>
+      </ion-list>
 
-    <ion-list>
-      <ion-item no-lines>
-        <ion-label>
-          <h2>Department</h2>
-        </ion-label>
-        <ion-select name="dept" [(ngModel)]="dept" formControlName="dept">
-          <ion-option value="A1">A1</ion-option>
-          <ion-option value="B1">B1</ion-option>
-          <ion-option value="C1">C1</ion-option>
-          <ion-option value="A2">A2</ion-option>
-          <ion-option value="B2">B2</ion-option>
-          <ion-option value="C2">C2</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
+      <ion-list>
+        <ion-item no-lines>
+          <ion-label>
+            <h2>Department</h2>
+          </ion-label>
+          <ion-select name="dept" [(ngModel)]="dept" formControlName="dept">
+            <ion-option value="A1">A1</ion-option>
+            <ion-option value="B1">B1</ion-option>
+            <ion-option value="C1">C1</ion-option>
+            <ion-option value="A2">A2</ion-option>
+            <ion-option value="B2">B2</ion-option>
+            <ion-option value="C2">C2</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
 
-    <ion-list>
-      <ion-item no-lines>
-        <ion-label>
-          <h2>Year</h2>
-        </ion-label>
-        <ion-select name="year" [(ngModel)]="year" formControlName="year">
-          <ion-option value="1">1st</ion-option>
-          <ion-option value="2">2nd</ion-option>
-          <ion-option value="3">3rd</ion-option>
-          <ion-option value="4">4th</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-list>
-      
-  </form>
+      <ion-list>
+        <ion-item no-lines>
+          <ion-label>
+            <h2>Year</h2>
+          </ion-label>
+          <ion-select name="year" [(ngModel)]="year" formControlName="year">
+            <ion-option value="1">1st</ion-option>
+            <ion-option value="2">2nd</ion-option>
+            <ion-option value="3">3rd</ion-option>
+            <ion-option value="4">4th</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+    </form>
+  <!-- </div> -->
   <button ion-button type="submit" (click)="store()" [disabled]="!sup.valid">Save Changes</button>
 
 </ion-content>
