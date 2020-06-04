@@ -14,7 +14,7 @@ export class NeweventPage {
   title:any;
   venue:any;
   link:any;
-  desc:any;
+  des:any;
   date:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public http: Http, public alertCtrl: AlertController) {
@@ -31,7 +31,7 @@ next(){
     title:this.title,
     venue:this.venue,
     link:this.link,
-    desc:this.desc,
+    des:this.des,
     date:this.date
   }
   this.http.post('http://localhost:3000/uploadevent',body).subscribe(res =>{

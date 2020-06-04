@@ -149,10 +149,18 @@
       <ion-item no-lines *ngIf="sup.controls.year.hasError('required') && sup.controls.year.touched">
           <p>year is required</p>
         </ion-item>
+        <ion-item no-lines>
+          <ion-label>Picture</ion-label>
+          <ion-icon item-start md="md-image" class="text-primary"></ion-icon>
+          <ion-input type="file" name="image" accept="image/*" (change)="changeListener($event)">Choose Image</ion-input>
+        </ion-item>
     </ion-list>
       
   </form>
 </ion-card>
 
     <button ion-button type="submit" (click)="store()" [disabled]="!sup.valid">Register</button>
-</ion-content>
+    
+    <!-- <button ion-button type="submit" (click)="uploadpic()" >upload your profile </picture></button>
+    -->
+  </ion-content>

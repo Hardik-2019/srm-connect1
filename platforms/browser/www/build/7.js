@@ -1,14 +1,25 @@
 webpackJsonp([7],{
 
+<<<<<<< HEAD
 /***/ 286:
+=======
+/***/ 287:
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailsPageModule", function() { return DetailsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__details__ = __webpack_require__(109);
+=======
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventformPageModule", function() { return EventformPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventform__ = __webpack_require__(110);
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,6 +29,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 var DetailsPageModule = /** @class */ (function () {
     function DetailsPageModule() {
     }
@@ -35,6 +47,25 @@ var DetailsPageModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=details.module.js.map
+=======
+var EventformPageModule = /** @class */ (function () {
+    function EventformPageModule() {
+    }
+    EventformPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__eventform__["a" /* EventformPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__eventform__["a" /* EventformPage */]),
+            ],
+        })
+    ], EventformPageModule);
+    return EventformPageModule;
+}());
+
+//# sourceMappingURL=eventform.module.js.map
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 
 /***/ })
 

@@ -101,23 +101,31 @@
             </div>
   
             <br><div *ngFor="let item of items"> 
-            <span><div *ngIf="items.includes(comment.answerid) ; else notToday">
-              <button ion-button clear class="vote" (click)="upvote(comment.answerid)">
-                <ion-icon name="arrow-round-up"></ion-icon>
-                &ensp;&ensp;{{comment.upvotes - comment.downvotes+xx}}
-              </button>
+              <span><div *ngIf="items.includes(comment.answerid) == true">
+                <button ion-button clear class="vote" (click)="upvote(comment.answerid)">
+                  <ion-icon name="arrow-round-up"></ion-icon>
+                 
+                </button>
+                
+              </div>
+              &ensp;&ensp;{{comment.upvotes - comment.downvotes+xx}}
+              <div *ngIf="items.includes(comment.answerid) == false">
+                <button ion-button clear class="vote" (click)="upvote(comment.answerid)">
+                  <ion-icon name="arrow-round-up"></ion-icon>
+                 
+                </button>
+                
+              </div>
+           
+              </span>
             </div>
-            <ng-template #notToday>kweHR;QOE</ng-template>
-         
-            </span>
-          </div>
             &ensp;
     
-            <span>
+            <!-- <span>
              <button ion-button clear class="vote">
                 <ion-icon name="arrow-round-down"></ion-icon>
               </button>
-            </span>
+            </span> -->
   
             <button ion-button clear class="delete" (click)="Delete(i)" *ngIf="uid==comment.userid">
               <ion-icon name="md-trash"></ion-icon>

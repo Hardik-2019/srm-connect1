@@ -25788,6 +25788,16 @@ page-details .card-md {
   box-shadow: -5px 5px 0px 0 #18065a;
 }
 
+page-details .deets {
+  background: linear-gradient(16deg, white 75%, #0e92ed 98%);
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+}
+
+page-details .deets {
+  background: linear-gradient(16deg, white 75%, #0e92ed 98%);
+}
+
 page-details .description {
   display: block;
   color: #18065a;
@@ -25949,6 +25959,7 @@ page-events h2 {
 }
 
 page-events .fab-close-icon {
+  color: white;
   opacity: 100 !important;
   font-size: 50px;
 }
@@ -26034,6 +26045,7 @@ page-events .card-md {
   width: 100%;
   margin-left: 0px;
   margin-top: 20px;
+  background: linear-gradient(20deg, white 80%, #0e92ed 96%);
   -webkit-box-shadow: -5px 5px 0px 0 #18065a;
   box-shadow: -5px 5px 0px 0 #18065a;
 }
@@ -26067,6 +26079,10 @@ page-events .tab {
   font-size: large;
   text-decoration: none;
   color: white;
+}
+
+page-events ion-icon {
+  color: #18065a;
 }
 
 page-feedback .master {
@@ -26231,6 +26247,10 @@ page-forum #nav {
   display: inline;
 }
 
+page-forum .deets {
+  background: linear-gradient(16deg, white 70%, #0e92ed 98%);
+}
+
 page-forum .question-type {
   font-weight: 1000;
 }
@@ -26293,6 +26313,11 @@ page-home .master {
 }
 
 page-home .submit {
+  background-image: linear-gradient(155deg, white 1%, #0e92ed 20%, #0e92ed 85%, white 99%);
+  text-align: center;
+}
+
+page-home .button {
   background: transparent !important;
   color: #18065a;
   font-size: large;
@@ -26522,6 +26547,7 @@ page-signup ion-header {
 }
 
 page-signup .master {
+  background-color: white;
   text-align: center;
 }
 

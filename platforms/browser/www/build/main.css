@@ -26312,6 +26312,39 @@ page-interest #join {
   border-radius: 8px;
 }
 
+<<<<<<< HEAD
+=======
+page-myprofile .master {
+  background-color: white;
+}
+
+page-myprofile ion-header {
+  background-color: #0e92ed;
+  border-bottom-right-radius: 3.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+}
+
+page-myprofile #head {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+page-myprofile #top {
+  text-align: center;
+}
+
+page-myprofile #menu {
+  background-color: transparent;
+  float: left;
+  font-size: xx-large;
+  margin-left: 5px;
+  color: white;
+}
+
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 page-signup ion-item {
   background: transparent !important;
 }

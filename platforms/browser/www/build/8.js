@@ -1,14 +1,25 @@
 webpackJsonp([8],{
 
+<<<<<<< HEAD
 /***/ 284:
+=======
+/***/ 286:
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddPageModule", function() { return AddPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__add__ = __webpack_require__(108);
+=======
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailsPageModule", function() { return DetailsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__details__ = __webpack_require__(109);
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,6 +29,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 var AddPageModule = /** @class */ (function () {
     function AddPageModule() {
     }
@@ -35,6 +47,25 @@ var AddPageModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=add.module.js.map
+=======
+var DetailsPageModule = /** @class */ (function () {
+    function DetailsPageModule() {
+    }
+    DetailsPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__details__["a" /* DetailsPage */]),
+            ],
+        })
+    ], DetailsPageModule);
+    return DetailsPageModule;
+}());
+
+//# sourceMappingURL=details.module.js.map
+>>>>>>> fe56713674b266d86907f64b02ceb180428104cc
 
 /***/ })
 

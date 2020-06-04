@@ -5,6 +5,7 @@ import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
 
+
 @IonicPage()
 @Component({
   selector: 'page-myprofile',
@@ -79,8 +80,6 @@ export class MyprofilePage {
   alert.present();
   this.ionViewWillEnter();
 }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MyprofilePage');
-  }
 
+  
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //import { Storage } from '@ionic/storage';
-import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { HomePage } from '../home/home';
 import { Http } from '@angular/http';
@@ -20,6 +20,11 @@ export class SignupPage {
   course:any;
   dept:any;
   year:any;
+  profpic:File;
+  file:File;
+  profpicname:any;
+
+
   private sup: FormGroup;
   unpattern="^(?=.*[A-Z])(?=.*[a-z]).{3,15}$";
   paspattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$";
@@ -52,6 +57,19 @@ export class SignupPage {
   this.navCtrl.setRoot(HomePage);
   }
   store(){
+    const body = new FormData();
+    this.profpicname = Date.now()
+     body.append('profpic', this.file,this.profpicname)
+     body.append('name', this.name,)
+     body.append('em', this.em)
+     body.append('pas', this.pas)
+     body.append('mob', this.mob)
+     body.append('reg', this.reg)
+     body.append('batch', this.batch)
+     body.append('dept', this.dept)
+     body.append('course', this.course)
+     body.append(' year', this. year)
+
     let userdata={
     name: this.name,
     em:this.em,
@@ -61,9 +79,11 @@ export class SignupPage {
     batch:this.batch,
     dept:this.dept,
     course:this.course,
-    year:this.year
+    year:this.year,
+    body:body
+    
   }
-  this.http.post('http://localhost:3000/signup',userdata).subscribe(res=>{
+  this.http.post('http://localhost:3000/signup',body).subscribe(res=>{
         
   })
 
@@ -71,6 +91,17 @@ export class SignupPage {
   this.navCtrl.setRoot(HomePage);
 
 }
-
+changeListener($event): void {
+  this.file = $event.target.files[0];
+}
+uploadpic(){
+  
+  const body = new FormData();
+ this.profpicname = Date.now()
+  body.append('profpic', this.file,this.profpicname)
+  this.http.post('http://localhost:3000/uploadpic',body).subscribe(res=>{
+        
+  })
+}
 }
 

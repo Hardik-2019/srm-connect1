@@ -16,6 +16,7 @@ ion-card-title{
 }
 ion-item{
     background-color:rgb(190, 218, 224);
+   // background-color:rgb(190, 218, 224);
     background: transparent !important;
 }
 
@@ -27,10 +28,11 @@ h2{
     color: rgb(24, 6, 90);
 }
 .fab-close-icon{
-    // color: white;
+     color: white;
     opacity: 100 !important;
     font-size: 50px;
 }
+
 #head{
     font-size: 30px;
     font-weight: bold;
@@ -103,6 +105,7 @@ ion-scroll {
     width: 100%;
     margin-left: 0px;
     margin-top: 20px;  
+    background: linear-gradient(20deg, rgba(255,255,255,1) 80%, #0e92ed 96%);
     box-shadow: -5px 5px 0px 0 rgb(24, 6, 90);
 }
 .photo{
@@ -131,5 +134,8 @@ ion-header{
     font-size: large;
     text-decoration: none;
     color: white;
+}
+ion-icon{
+    color: rgb(24, 6, 90);
 }
 }
