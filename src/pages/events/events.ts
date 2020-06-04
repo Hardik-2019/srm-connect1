@@ -6,6 +6,7 @@ import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { AlertController } from 'ionic-angular';
+import { NeweventPage } from '../newevent/newevent';
 
 @IonicPage()
 @Component({
@@ -84,6 +85,9 @@ export class EventsPage {
     console.log('ionViewDidLoad EventsPage');
   }
 
+  addEvent(){
+    this.navCtrl.push(NeweventPage);
+  }
 
   next1(id) {
     this.storage.set('id', id);
@@ -143,8 +147,8 @@ export class EventsPage {
     console.log('current segment is ', this.selectedSegment)
   }
 
-  share(title,description) {
-    this.socialSharing.share( description , title ,  'http://www.ionicsync.com').then(() => {
+  share(title,description,link) {
+    this.socialSharing.share( description , title , link).then(() => {
 
       console.log('Shared Successfully');
 

@@ -26068,10 +26068,6 @@ page-events .tab {
   color: white;
 }
 
-page-events ion-icon {
-  color: #18065a;
-}
-
 page-feedback .master {
   background-color: white;
 }
@@ -26443,6 +26439,63 @@ page-myprofile .button {
 
 page-myprofile h2 {
   color: #18065a;
+}
+
+page-newevent .master {
+  background-color: white;
+}
+
+page-newevent ion-item {
+  background-color: white;
+  background: transparent !important;
+}
+
+page-newevent #head {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+page-newevent #top {
+  text-align: center;
+}
+
+page-newevent #menu {
+  background-color: transparent;
+  float: left;
+  font-size: xx-large;
+  margin-left: 5px;
+  color: white;
+}
+
+page-newevent #join {
+  border: 2px;
+  border-style: solid;
+  border-color: #18065a;
+  border-radius: 8px;
+}
+
+page-newevent h2, page-newevent h3, page-newevent p {
+  color: #18065a;
+}
+
+page-newevent .button {
+  background-color: #0e92ed;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-right-radius: 1.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
+}
+
+page-newevent ion-header {
+  background-color: #0e92ed;
+  border-bottom-right-radius: 3.5rem;
+  -webkit-box-shadow: -5px 5px 0px 0 #18065a;
+  box-shadow: -5px 5px 0px 0 #18065a;
 }
 
 page-signup ion-item {

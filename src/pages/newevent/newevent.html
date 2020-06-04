@@ -1,0 +1,40 @@
+<ion-header no-border>
+  <div id="top">
+    <button id="menu" type="submit" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <h2 id="head">Add Event</h2>
+  </div>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="title" placeholder="Title"></ion-input>
+    </ion-item>
+    <br>
+  
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="venue" placeholder="Venue"></ion-input>
+    </ion-item>
+    <br>
+
+    <!-- <ion-item>
+      <ion-input type="text" [(ngModel)]="link" placeholder="Link"></ion-input>
+    </ion-item>
+    <br> -->
+
+    <ion-item>
+      <ion-input type="date" [(ngModel)]="date" placeholder="Date of Event"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item>
+      <ion-textarea type="text" [(ngModel)]="desc" placeholder="Description"></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+  <button class="next" ion-button type="submit" (click)="next()">Create Event</button>
+  </ion-content>

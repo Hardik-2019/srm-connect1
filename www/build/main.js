@@ -1,4 +1,4 @@
-webpackJsonp([12],{
+webpackJsonp([13],{
 
 /***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -53,7 +53,7 @@ var AboutusPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__forum_forum__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -135,7 +135,7 @@ var AddPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__forum_forum__ = __webpack_require__(44);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -289,7 +289,7 @@ var DetailsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__events_events__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -352,7 +352,7 @@ var EventformPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -439,7 +439,7 @@ var SignupPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -548,7 +548,7 @@ var ForgotpassPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__events_events__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -614,7 +614,7 @@ var FeedbackPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -657,10 +657,9 @@ var MyprofilePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-myprofile',template:/*ion-inline-start:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\myprofile\myprofile.html"*/'<ion-header no-border>\n\n  <div id="top">\n\n    <button id="menu" menuToggle>\n\n      <ion-icon name="menu" id="menu"></ion-icon>\n\n    </button>\n\n\n\n    <h2 id="head">My Profile</h2>\n\n  </div>\n\n</ion-header>\n\n<ion-content class="master" padding>\n\n\n\n  <ion-avatar class="pic" item-start>\n\n    <img class="pic" src="assets/imgs/images.png">\n\n  </ion-avatar>\n\n\n\n  <form id="join" [formGroup]="sup" (ngSubmit)="supForm()">\n\n\n\n\n\n    <ion-item no-lines>\n\n      <ion-label stacked>\n\n        <h2>Username</h2>\n\n      </ion-label>\n\n      <ion-input id="name" name="name" [(ngModel)]="name" type="text" formControlName="username"></ion-input>\n\n    </ion-item>\n\n    <ion-item no-lines *ngIf="sup.controls.username.hasError(\'pattern\') && sup.controls.username.touched">\n\n      <p>Invalid Username</p>\n\n    </ion-item>\n\n\n\n    <ion-item no-lines>\n\n      <ion-label stacked>\n\n        <h2>Email</h2>\n\n      </ion-label>\n\n      <ion-input id="em" name="em" [(ngModel)]="em" type="text" formControlName="email"></ion-input>\n\n    </ion-item>\n\n    <ion-item no-lines *ngIf="sup.controls.email.hasError(\'email\') && sup.controls.email.touched">\n\n      <p> Invalid email</p>\n\n    </ion-item>\n\n\n\n    <ion-item no-lines>\n\n      <ion-label stacked>\n\n        <h2>Mobile</h2>\n\n      </ion-label>\n\n      <ion-input id="mob" name="mob" [(ngModel)]="mob" type="string" formControlName="mobile"></ion-input>\n\n    </ion-item>\n\n    <ion-item no-lines *ngIf="sup.controls.mobile.hasError(\'pattern\') && sup.controls.mobile.touched">\n\n      <p>Invalid mobile number</p>\n\n    </ion-item>\n\n\n\n    <ion-item no-lines>\n\n      <ion-label stacked>\n\n        <h2>Registration Number</h2>\n\n      </ion-label>\n\n      <ion-input id="reg" name="reg" [(ngModel)]="reg" type="string" formControlName="regno"></ion-input>\n\n    </ion-item>\n\n    <ion-item no-lines *ngIf="sup.controls.regno.hasError(\'pattern\') && sup.controls.regno.touched">\n\n      <p>Registration number is wrong</p>\n\n    </ion-item>\n\n\n\n    <ion-item no-lines>\n\n      <ion-label stacked>\n\n        <h2>Course</h2>\n\n      </ion-label>\n\n      <ion-input id="course" name="course" [(ngModel)]="course" type="text" formControlName="course"></ion-input>\n\n    </ion-item>\n\n    <ion-item no-lines *ngIf="sup.controls.course.hasError(\'pattern\') && sup.controls.course.touched">\n\n      <p>Invalid Course</p>\n\n    </ion-item>\n\n\n\n\n\n    <ion-list>\n\n      <ion-item no-lines>\n\n        <ion-label>\n\n          <h2>Batch</h2>\n\n        </ion-label>\n\n        <ion-select name="batch" [(ngModel)]="batch" formControlName="batch">\n\n          <ion-option value="1">1</ion-option>\n\n          <ion-option value="2">2</ion-option>\n\n        </ion-select>\n\n        </ion-item>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-item no-lines>\n\n        <ion-label>\n\n          <h2>Department</h2>\n\n        </ion-label>\n\n        <ion-select name="dept" [(ngModel)]="dept" formControlName="dept">\n\n          <ion-option value="A1">A1</ion-option>\n\n          <ion-option value="B1">B1</ion-option>\n\n          <ion-option value="C1">C1</ion-option>\n\n          <ion-option value="A2">A2</ion-option>\n\n          <ion-option value="B2">B2</ion-option>\n\n          <ion-option value="C2">C2</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-item no-lines>\n\n        <ion-label>\n\n          <h2>Year</h2>\n\n        </ion-label>\n\n        <ion-select name="year" [(ngModel)]="year" formControlName="year">\n\n          <ion-option value="1">1st</ion-option>\n\n          <ion-option value="2">2nd</ion-option>\n\n          <ion-option value="3">3rd</ion-option>\n\n          <ion-option value="4">4th</ion-option>\n\n        </ion-select>\n\n      </ion-item>\n\n    </ion-list>\n\n      \n\n  </form>\n\n  <button ion-button type="submit" (click)="store()" [disabled]="!sup.valid">Save Changes</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\myprofile\myprofile.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], MyprofilePage);
     return MyprofilePage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=myprofile.js.map
@@ -690,51 +689,55 @@ webpackEmptyAsyncContext.id = 123;
 var map = {
 	"../pages/aboutus/aboutus.module": [
 		285,
-		11
+		12
 	],
 	"../pages/add/add.module": [
 		286,
-		10
+		11
 	],
 	"../pages/details/details.module": [
 		287,
-		9
+		10
 	],
 	"../pages/eventform/eventform.module": [
 		288,
-		8
+		9
 	],
 	"../pages/events/events.module": [
 		289,
-		7
+		8
 	],
 	"../pages/feedback/feedback.module": [
 		290,
-		6
+		7
 	],
 	"../pages/forgotpass/forgotpass.module": [
 		291,
-		5
+		6
 	],
 	"../pages/forum/forum.module": [
 		292,
-		4
+		5
 	],
 	"../pages/interest/interest.module": [
 		293,
-		3
+		4
 	],
 	"../pages/myprofile/myprofile.module": [
 		294,
-		2
+		3
+	],
+	"../pages/newevent/newevent.module": [
+		295,
+		0
 	],
 	"../pages/newpage/newpage.module": [
-		295,
-		1
+		296,
+		2
 	],
 	"../pages/signup/signup.module": [
-		296,
-		0
+		297,
+		1
 	]
 };
 function webpackAsyncContext(req) {
@@ -805,7 +808,7 @@ var InterestPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewpagePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -890,7 +893,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_eventform_eventform__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_feedback_feedback__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_aboutus_aboutus__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_newpage_newpage__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_forum_forum__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_myprofile_myprofile__ = __webpack_require__(114);
@@ -961,6 +964,7 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/forum/forum.module#ForumPageModule', name: 'ForumPage', segment: 'forum', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/interest/interest.module#InterestPageModule', name: 'InterestPage', segment: 'interest', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/myprofile/myprofile.module#MyprofilePageModule', name: 'MyprofilePage', segment: 'myprofile', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/newevent/newevent.module#NeweventPageModule', name: 'NeweventPage', segment: 'newevent', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/newpage/newpage.module#NewpagePageModule', name: 'NewpagePage', segment: 'newpage', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
@@ -1081,18 +1085,13 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 32:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NeweventPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventform_eventform__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1102,6 +1101,58 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+/**
+ * Generated class for the NeweventPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var NeweventPage = /** @class */ (function () {
+    function NeweventPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    NeweventPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad NeweventPage');
+    };
+    NeweventPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-newevent',template:/*ion-inline-start:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\newevent\newevent.html"*/'<ion-header no-border>\n  <div id="top">\n    <button id="menu" type="submit" (click)="back()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n\n    <h2 id="head">Add Event</h2>\n  </div>\n</ion-header>\n\n<ion-content padding>\n  <ion-list>\n\n    <ion-item>\n      <ion-input type="text" [(ngModel)]="title" placeholder="Title"></ion-input>\n    </ion-item>\n    <br>\n  \n    <ion-item>\n      <ion-input type="text" [(ngModel)]="venue" placeholder="Venue"></ion-input>\n    </ion-item>\n    <br>\n\n    <!-- <ion-item>\n      <ion-input type="text" [(ngModel)]="link" placeholder="Link"></ion-input>\n    </ion-item>\n    <br> -->\n\n    <ion-item>\n      <ion-input type="date" [(ngModel)]="date" placeholder="Date of Event"></ion-input>\n    </ion-item>\n    <br>\n\n    <ion-item>\n      <ion-textarea type="text" [(ngModel)]="desc" placeholder="Description"></ion-textarea>\n    </ion-item>\n\n  </ion-list>\n  <button class="next" ion-button type="submit" (click)="next()">Create Event</button>\n  </ion-content>\n'/*ion-inline-end:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\newevent\newevent.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], NeweventPage);
+    return NeweventPage;
+}());
+
+//# sourceMappingURL=newevent.js.map
+
+/***/ }),
+
+/***/ 32:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventform_eventform__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__newevent_newevent__ = __webpack_require__(298);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 
 
@@ -1164,6 +1215,9 @@ var EventsPage = /** @class */ (function () {
         this.selectedSegment = 'all';
         console.log('ionViewDidLoad EventsPage');
     };
+    EventsPage.prototype.addEvent = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__newevent_newevent__["a" /* NeweventPage */]);
+    };
     EventsPage.prototype.next1 = function (id) {
         this.storage.set('id', id);
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__eventform_eventform__["a" /* EventformPage */]);
@@ -1217,8 +1271,8 @@ var EventsPage = /** @class */ (function () {
     EventsPage.prototype.favourites = function () {
         console.log('current segment is ', this.selectedSegment);
     };
-    EventsPage.prototype.share = function (title, description) {
-        this.socialSharing.share(description, title, 'http://www.ionicsync.com').then(function () {
+    EventsPage.prototype.share = function (title, description, link) {
+        this.socialSharing.share(description, title, link).then(function () {
             console.log('Shared Successfully');
         }).catch(function () {
             console.log('Sharing Failed');
@@ -1227,7 +1281,7 @@ var EventsPage = /** @class */ (function () {
     ;
     EventsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-events',template:/*ion-inline-start:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\events\events.html"*/'<ion-header no-border>\n\n    <div id="top">\n\n      <button id="menu" menuToggle>\n\n        <ion-icon name="menu" id="menu"></ion-icon>\n\n      </button>\n\n\n\n      <h2 id="head">Events </h2>\n\n    </div>\n\n    <ion-segment class="seg" [(ngModel)]="selectedSegment">\n\n      <ion-segment-button (click)="all()" class="tab" value="all" style="border-bottom-width:0px;color: white;">\n\n        All\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="favourites()" class="tab" value="favourites" style="border-bottom-width:0px ;color: white;">\n\n        Favourites\n\n      </ion-segment-button>\n\n      <ion-segment-button class="tab" value="interest" style="border-bottom-width:0px ;color: white;">\n\n        Interest\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n</ion-header>\n\n<ion-content class="master" padding>\n\n  <!-- [virtualScroll]="events" [approxItemHeight]="\'100px\'"  *virtualItem="let event"   -->\n\n  <div [ngSwitch]="selectedSegment">\n\n    <div>\n\n      <ion-list *ngSwitchCase="\'all\'" id="first">\n\n\n\n        <ion-card id="card" *ngFor="let event of events" >\n\n\n\n          <ion-card-header class="cardhead" (click)="next1(event.eventid)">\n\n            <button id="host">\n\n              <ion-icon style="font-size: 50px;" name="contact"></ion-icon>\n\n            </button>\n\n            <span id="name" name="date">{{event.venue}}</span><br>\n\n            {{event.date}}\n\n\n\n            <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(event.eventid)" />\n\n          </ion-card-header>\n\n          <ion-card-content class="cardbody" (click)="next1(event.eventid)">\n\n\n\n            <ion-card-title name="title" id="title">\n\n              {{event.title}}\n\n            </ion-card-title>\n\n            <hr>\n\n            <p name="des" class="des" >{{event.description}}</p>\n\n\n\n          </ion-card-content>\n\n          <div>\n\n            <ion-grid id="grid">\n\n              <ion-row>\n\n                <ion-col>\n\n                        <button (click)="next2(event.eventid)" id="heart" ion-button icon-start clear small>\n\n                         <ion-icon style="font-size: xx-large; text-align: center;" name=\'heart-outline\'></ion-icon>\n\n                        </button>\n\n                </ion-col>\n\n\n\n                <ion-col>\n\n                  <button (click)="share(event.title,event.description)" ion-button icon-start clear small>\n\n                    <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>\n\n                    <div></div>\n\n                  </button>\n\n                </ion-col>\n\n\n\n              </ion-row>\n\n            </ion-grid>\n\n          </div>\n\n        </ion-card>\n\n      </ion-list>\n\n    </div>\n\n  </div>\n\n\n\n  <div [ngSwitch]="selectedSegment">\n\n    <ion-list class="favo" *ngSwitchCase="\'favourites\'">\n\n\n\n      <ion-card *ngFor="let fav of favs">\n\n        <ion-card-header class="cardhead" (click)="next1(fav.eventid)">\n\n          <button id="host">\n\n            <ion-icon style="font-size: 50px;" name="contact"></ion-icon>\n\n          </button>\n\n          <span id="name" name="date">{{fav.venue}}</span><br>\n\n          {{fav.date}}\n\n          <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(fav.eventid)" />\n\n        </ion-card-header>\n\n        <ion-card-content (click)="next1(fav.eventid)">\n\n          <ion-card-title name="title" id="title">\n\n            {{fav.title}}\n\n          </ion-card-title>\n\n          <hr>\n\n          <p name="des" class="des">\n\n            {{fav.description}}\n\n          </p>\n\n        </ion-card-content>\n\n        <ion-grid id="grid">\n\n          <ion-row>\n\n            <ion-col>\n\n              <button ion-button icon-start clear small (click)="Delete(fav.eventid)">\n\n                <ion-icon style="font-size: xx-large; text-align: center;" name="heart-outline"></ion-icon>\n\n                <div></div>\n\n              </button>\n\n            </ion-col>\n\n\n\n            \n\n\n\n            <ion-col>\n\n              <button ion-button icon-start clear small>\n\n                <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>\n\n                <div></div>\n\n              </button>\n\n            </ion-col>\n\n\n\n          </ion-row>\n\n        </ion-grid>\n\n      </ion-card>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <div [ngSwitch]="selectedSegment">\n\n    <ion-list class="fav" *ngSwitchCase="\'interest\'">\n\n      <h2> Choose what to see </h2>\n\n      <form id="join">\n\n\n\n        <ion-item no-lines>\n\n          <ion-label>Technical</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Fun</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Recruitment</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Social</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Seminar</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Workshop</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Environment</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n\n\n      </form>\n\n\n\n      <div style="text-align: center;">\n\n        <button class="next" ion-button type="submit" (click)="next()">Save</button>\n\n      </div>\n\n    </ion-list>\n\n\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\events\events.html"*/,
+            selector: 'page-events',template:/*ion-inline-start:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\events\events.html"*/'<ion-header no-border>\n\n    <div id="top">\n\n      <button id="menu" menuToggle>\n\n        <ion-icon name="menu" id="menu"></ion-icon>\n\n      </button>\n\n\n\n      <h2 id="head">Events </h2>\n\n    </div>\n\n    <ion-segment class="seg" [(ngModel)]="selectedSegment">\n\n      <ion-segment-button (click)="all()" class="tab" value="all" style="border-bottom-width:0px;color: white;">\n\n        All\n\n      </ion-segment-button>\n\n      <ion-segment-button (click)="favourites()" class="tab" value="favourites" style="border-bottom-width:0px ;color: white;">\n\n        Favourites\n\n      </ion-segment-button>\n\n      <ion-segment-button class="tab" value="interest" style="border-bottom-width:0px ;color: white;">\n\n        Interest\n\n      </ion-segment-button>\n\n    </ion-segment>\n\n</ion-header>\n\n<ion-content class="master" padding>\n\n  <!-- [virtualScroll]="events" [approxItemHeight]="\'100px\'"  *virtualItem="let event"   -->\n\n  <div [ngSwitch]="selectedSegment">\n\n    <div>\n\n      <ion-list *ngSwitchCase="\'all\'" id="first">\n\n\n\n        <ion-card id="card" *ngFor="let event of events" >\n\n\n\n          <ion-card-header class="cardhead" (click)="next1(event.eventid)">\n\n            <button id="host">\n\n              <ion-icon style="font-size: 50px;" name="contact"></ion-icon>\n\n            </button>\n\n            <span id="name" name="date">{{event.venue}}</span><br>\n\n            {{event.date}}\n\n\n\n            <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(event.eventid)" />\n\n          </ion-card-header>\n\n          <ion-card-content class="cardbody" (click)="next1(event.eventid)">\n\n\n\n            <ion-card-title name="title" id="title">\n\n              {{event.title}}\n\n            </ion-card-title>\n\n            <hr>\n\n            <p name="des" class="des" >{{event.description}}</p>\n\n\n\n          </ion-card-content>\n\n          <div>\n\n            <ion-grid id="grid">\n\n              <ion-row>\n\n                <ion-col>\n\n                        <button (click)="next2(event.eventid)" id="heart" ion-button icon-start clear small>\n\n                         <ion-icon style="font-size: xx-large; text-align: center;" name=\'heart-outline\'></ion-icon>\n\n                        </button>\n\n                </ion-col>\n\n\n\n                <ion-col>\n\n                  <button (click)="share(event.title,event.description,event.link)" ion-button icon-start clear small>\n\n                    <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>\n\n                    <div></div>\n\n                  </button>\n\n                </ion-col>\n\n\n\n              </ion-row>\n\n            </ion-grid>\n\n          </div>\n\n        </ion-card>\n\n      </ion-list>\n\n    </div>\n\n  </div>\n\n  <ion-fab right bottom >\n\n    <button ion-fab (click)="addEvent()"><ion-icon name="add-outline" id="addbutton"></ion-icon></button>\n\n  </ion-fab>\n\n\n\n  <div [ngSwitch]="selectedSegment">\n\n    <ion-list class="favo" *ngSwitchCase="\'favourites\'">\n\n\n\n      <ion-card *ngFor="let fav of favs">\n\n        <ion-card-header class="cardhead" (click)="next1(fav.eventid)">\n\n          <button id="host">\n\n            <ion-icon style="font-size: 50px;" name="contact"></ion-icon>\n\n          </button>\n\n          <span id="name" name="date">{{fav.venue}}</span><br>\n\n          {{fav.date}}\n\n          <img src="../assets/imgs/images.jpg" class="photo" (click)="next1(fav.eventid)" />\n\n        </ion-card-header>\n\n        <ion-card-content (click)="next1(fav.eventid)">\n\n          <ion-card-title name="title" id="title">\n\n            {{fav.title}}\n\n          </ion-card-title>\n\n          <hr>\n\n          <p name="des" class="des">\n\n            {{fav.description}}\n\n          </p>\n\n        </ion-card-content>\n\n        <ion-grid id="grid">\n\n          <ion-row>\n\n            <ion-col>\n\n              <button ion-button icon-start clear small (click)="Delete(fav.eventid)">\n\n                <ion-icon style="font-size: xx-large; text-align: center;" name="heart-outline"></ion-icon>\n\n                <div></div>\n\n              </button>\n\n            </ion-col>\n\n\n\n            \n\n\n\n            <ion-col>\n\n              <button ion-button icon-start clear small>\n\n                <ion-icon style="font-size: xx-large; text-align: center;" name="share-alt"></ion-icon>\n\n                <div></div>\n\n              </button>\n\n            </ion-col>\n\n\n\n          </ion-row>\n\n        </ion-grid>\n\n      </ion-card>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <div [ngSwitch]="selectedSegment">\n\n    <ion-list class="fav" *ngSwitchCase="\'interest\'">\n\n      <h2> Choose what to see </h2>\n\n      <form id="join">\n\n\n\n        <ion-item no-lines>\n\n          <ion-label>Technical</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Fun</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Recruitment</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Social</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Seminar</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Workshop</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n        <ion-item no-lines>\n\n          <ion-label>Environment</ion-label>\n\n          <ion-checkbox></ion-checkbox>\n\n        </ion-item>\n\n\n\n      </form>\n\n\n\n      <div style="text-align: center;">\n\n        <button class="next" ion-button type="submit" (click)="next()">Save</button>\n\n      </div>\n\n    </ion-list>\n\n\n\n  </div>\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\Admin\Desktop\SRM-Connect-master1\SRM-Connect-master\src\pages\events\events.html"*/,
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _f || Object])
     ], EventsPage);
@@ -1249,7 +1303,7 @@ var EventsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__events_events__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__forgotpass_forgotpass__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1336,7 +1390,7 @@ var HomePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_social_sharing__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_add__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__details_details__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(26);
